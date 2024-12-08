@@ -5,11 +5,13 @@ printf("%5d %20dnn", fahr, celsius);
 Output:
     0                  -17nn   20                   -6nn   40                    4nn   60                   15nn   80                   26nn  100                   37nn  120                   48nn  140                   60nn  160                   71nn  180                   82nn  200               
 
-Erklärung: Die 5 vor %5d lässt je nach Anzahl der Zeichen im Integer Leerzeichen am Anfang frei. 
-Das heißt, wenn unsere Zahl aus einem Zeichen besteht, werden 4 Zeichen freigelassen bevor unsere Zahl ausgegeben wird, wenn unsere Zahl aus
-4 Zeichen besteht, wird ein Zeichen freigelassen. Oder anders: das Ende des Integers ist genau 5 Zeichen 
-vom letzten entfernt. Das Leerzeichen zwischen %5d und %20dnn wird auch mit ausgegeben. die "nn" nach %20dnn werden einfach direkt den dem Integer
-ausgegeben. 
+Erklärung: Die 5 vor %5d lässt je nach Anzahl der Zeichen im Integer 
+Leerzeichen am Anfang frei. Das heißt, wenn unsere Zahl aus einem Zeichen
+besteht, werden 4 Zeichen freigelassen bevor unsere Zahl ausgegeben wird, wenn
+unsere Zahl aus 4 Zeichen besteht, wird ein Zeichen freigelassen. Oder anders:
+das Ende des Integers ist genau 5 Zeichen vom letzten entfernt. Das Leerzeichen
+zwischen %5d und %20dnn wird auch mit ausgegeben. Die "nn" nach %20dnn werden
+einfach direkt nach dem Integer ausgegeben. 
 
 
 printf("%-5d %20dnn", fahr, celsius);
@@ -18,29 +20,36 @@ Output:
 0                      -17nn20                      -6nn40                       4nn60                      15nn80                      26nn100                     37nn120                     48nn140                     60nn160                     71nn180                     82nn200                     93nn220                    104nn240                    115nn260                    126nn280                    137nn300                    148nn
 
 
-das -5d hat den selben effekt wie %5, nur dass die Zeichen NACH dem Integer freigelassen werden. Wenn 
-unser Integer also 1 Zeichen hat, werden 4 Zeichen freigelassen, hat unser Integer 4 Zeichen, wir 1 
-Zeichen freigelassen. 
+Das -5d hat den selben effekt wie %5, nur dass die Zeichen NACH dem Integer
+freigelassen werden. Wenn unser Integer also 1 Zeichen hat, werden 4 Zeichen
+freigelassen, hat unser Integer 4 Zeichen, wir 1 Zeichen freigelassen. 
 
 printf("%3d %6dn n", fahr, celsius);
 
 Output: 
   0    -17n n 20     -6n n 40      4n n 60     15n n 80     26n n100     37n n120     48n n140     60n n160     71n n180     82n n200     93n n220    104n n240    115n n260    126n n280    137n n300    148n n
 
-Diesmal werden 3 Zeichen freigelassen, sodass der erste Integer innerhalb der 3 Zeichen ausgegeben wird,
+Diesmal werden 3 Zeichen freigelassen, sodass der erste Integer innerhalb der 3
+Zeichen ausgegeben wird.
 
 Zu Task_1_4:
 
-EOF bedeutet End of File. Damit unser Programm merkt dass die Zeile zuende ist, wird geprüft ob getChar() NICHT EOF entspricht. EOF muss
-groß/klein genug sein damit getchar() es nicht mit einem char verwechselt.
-EOF ist als Integer in  <stdio.h> definiert.
+EOF bedeutet End of File. Damit unser Programm merkt dass die Zeile zuende ist,
+wird geprüft ob getChar() NICHT EOF entspricht. EOF muss groß/klein genug sein
+damit getchar() es nicht mit einem char verwechselt. EOF ist als Integer in
+<stdio.h> definiert.
 
-Um den Wert von EOF herausfinden kann man zb. seinem Code hinzufügen: printf("%d\n", EOF);
+Um den Wert von EOF herausfinden kann man zb. seinem Code hinzufügen:
+printf("%d\n", EOF);
 diese Zeile gibt aus: -1
-Vergleich mit einer Tabelle welche die die chars mit ihren zugehörigen Dezimalzahlen zeigt: Alle chars werden mit einer positiven, ganzen Zahl repräsentiert. EOF wird also niemals mit einem char verwechselt werden können. 
+Vergleich mit einer Tabelle welche die die chars mit ihren zugehörigen 
+Dezimalzahlen zeigt: Alle chars werden mit einer positiven, ganzen Zahl 
+repräsentiert. EOF wird also niemals mit einem char verwechselt werden können. 
  Zum Programm: "what is the value of the expression getchar != EOF ?
-mit dem Code: printf("%d", (getchar() != EOF)); kann man nach eingeben eines Inputs und "absenden" mit
-Enter den Wahrheitswert der expression ausgeben. (0 entspricht false -> getchar == EOF, 1 entspricht 
-true -> getchar != EOF).
-Normalerweise gibt diese Zeile immer eine 1 aus, nach einiger recherche kann man mit Ctrl+d ein EOF in
-den Input bringen und der code gibt ein 0 aus. 
+mit dem Code: printf("%d", (getchar() != EOF)); kann man nach eingeben eines 
+Inputs und "absenden" mit
+Enter den Wahrheitswert der expression ausgeben.
+(0 entspricht false -> getchar == EOF, 1 entspricht true -> getchar != EOF).
+Normalerweise gibt diese Zeile immer eine 1 aus, nach einiger recherche habe 
+ich herausgefunden, dass man mit Ctrl+d ein EOF in den Input bringen kann. Der
+Code gibt jetzt eine 0 aus. 
