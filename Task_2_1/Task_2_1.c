@@ -3,16 +3,7 @@
 #include <stdbool.h>
 
 int main(){
-	//Operators
-	//unary: 
-	//+, -
-	//!
-	//bit complement
-	//++ increment,
-	//*redicretion
-	//decrement pre/post
-	//& Adress operator
-	//sizeof
+	
 	bool k = true;
 	bool f = false;
 	int a = 4;
@@ -93,7 +84,7 @@ int main(){
 	printf("bitwise &: mit c = 0b00010000, d = 0b00011111\n");
 	printf("c&d = %d\n\n\n", (c&d));
 	printf("bitwise or mit c||d\n");
-	printf("c|d = %d\n\n\n", c|d);
+	printf("c|d = %d\n\n\n", c|d); //Fehler im Skript
 	printf("bitwise XOR mit c^d\n");
 	printf("c^d = %d\n\n\n", c^d);
 	
