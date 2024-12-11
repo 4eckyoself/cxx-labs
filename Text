@@ -53,3 +53,10 @@ Enter den Wahrheitswert der expression ausgeben.
 Normalerweise gibt diese Zeile immer eine 1 aus, nach einiger recherche habe 
 ich herausgefunden, dass man mit Ctrl+d ein EOF in den Input bringen kann. Der
 Code gibt jetzt eine 0 aus. 
+
+Zu Aufgabe 3_1:
+
+Fehlen die Adressoperatoren im Argument der scanf-Funktion, 
+gibt der Compiler die Fehlermeldung, dass das Format %d ein Argument des Typs int* erwartet, aber a bzw. b ein int ist. 
+
+Nach Recherche: die scanf() Funktion......... irgendwa smit pointer
