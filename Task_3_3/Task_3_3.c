@@ -13,8 +13,8 @@ int main() {
   
   for (i = 0; i <= size; i++) /* initialize the ... */
     flags[i]=TRUE; /* ... whole array */
-    for (i = 0; i <= size; i++) {
-      if (flags[i]) { /* if flag[i]=TRUE, then i+i+3 prim */
+  for (i = 0; i <= size; i++) {
+    if (flags[i]) { /* if flag[i]=TRUE, then i+i+3 prim */
         
         //printf("Primzahlen %d\t: %d\n",count, 2);
         printf("Primzahl %d\t: %d\n",count, prime);

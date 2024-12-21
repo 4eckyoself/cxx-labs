@@ -56,7 +56,7 @@ int main(){
 	  printf("a ist größer als b\n");
 	}
 	if(a >= b){
-	  printf("a ist größer-gleich b\n");
+	printf("a ist größer-gleich b\n");
 	}
 	if(b < a){
 	  printf("b ist kleiner als a\n");
@@ -87,7 +87,7 @@ int main(){
 	printf("c|d = %d\n\n\n", c|d); //Fehler im Skript
 	printf("bitwise XOR mit c^d\n");
 	printf("c^d = %d\n\n\n", c^d);
-	
+        	
 	printf("conditional operators (ternary)\n");
 	printf("mit a = %d, b = %d\n", a, b);
 	int l;

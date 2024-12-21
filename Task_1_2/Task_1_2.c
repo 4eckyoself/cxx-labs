@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
-int test = 5000;
+//int test = 5000;
 int fahr, celsius; /* Variable Declaration */
 int lower, upper, step; /* from int-Typ */
 lower = 0; /* lower limit... */

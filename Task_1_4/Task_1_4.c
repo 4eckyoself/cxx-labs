@@ -12,6 +12,8 @@ while(c != EOF){
 	c = getchar();
 	//if (getchar() != EOF) printf("yo");
 	printf("Wert: %d\n", c);
+	return 0;
+	
 }
 
 

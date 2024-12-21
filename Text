@@ -54,6 +54,10 @@ Normalerweise gibt diese Zeile immer eine 1 aus, nach einiger recherche habe
 ich herausgefunden, dass man mit Ctrl+d ein EOF in den Input bringen kann. Der
 Code gibt jetzt eine 0 aus. 
 
+Zu Aufgabe 2_1:
+Compilerwarnung mit GCC-Flag -Wall gibt den Hinweiss, dass ein Vergleich wie
+"a==a" immer True ist (Tautologisch Wahr), kann hier ignoriert werden.
+
 Zu Aufgabe 3_1:
 
 Fehlen die Adressoperatoren im Argument der scanf-Funktion, 

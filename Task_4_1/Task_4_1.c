@@ -17,7 +17,7 @@ int main(){
 				//int x;
 				//printf("p vorher: %d\n",x);
 				p *= base;	
-				return p;
+			return p;
 	}	
 	int fact(int y){
 		if(y < 0){
